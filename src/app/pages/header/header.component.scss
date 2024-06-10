@@ -1,0 +1,69 @@
+.dot::before {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: rgb(255, 119, 0);
+    border-radius: 50%;
+    // margin-right: 0.4em;
+}
+
+.list p {
+    margin: 0px;
+    padding: 3px 13px;
+    color: rgb(204, 204, 204);
+}
+
+.list {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: rgba(255, 102, 0, 0.137);
+}
+
+.active {
+    background-color: rgb(255, 119, 0);
+    padding: 5px;
+    border-radius: 20px;
+    color: white;
+}
+
+input {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+}
+
+.input-container input {
+    padding-left: 20px;
+    /* Adjust this value to accommodate the width of the triangle */
+}
+
+.input-container::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 30px;
+    border-left: 10px solid rgb(255, 119, 0);
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+}
+
+.input-container::after {
+    content: '\f007';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 90%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #000;
+}

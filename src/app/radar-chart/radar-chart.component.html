@@ -1,0 +1,112 @@
+<div class="d-flex justify-content-center all ">
+    <div class="d-flex flex-column gap-3">
+
+        <div class="d-flex gap-3">
+            <div class=" lh-1 d-flex flex-column p-3 rounded" style="gap:2px;width:130px;height: 100px;background: #F4DBD4 0% 0% no-repeat padding-box;">
+                <h3 class="m-0 lh-1">1334 <span>Egp</span></h3>
+                <p class="m-0 lh-1" style="font-size: 10px; font-weight:bold; ">Total Value</p>
+                <div class="Icontainer lh-1">
+                    <p class=" mx-4 ">23</p>
+                </div>
+            </div>
+
+            <div class="lh-1 d-flex flex-column p-3 rounded" style="gap:2px;width:130px;height: 100px; background:white;">
+                <h3 class="m-0 lh-1">1334<span>Egp</span></h3>
+                <p class="m-0 lh-1" style="font-size: 10px; font-weight:bold; ">Total Value</p>
+                <div class="Icontainer lh-1">
+                    <p class=" mx-4 ">23</p>
+                </div>
+            </div>
+
+            <div class=" lh-1 d-flex flex-column p-3 rounded" style="gap:2px;width:130px;height: 100px;background:white;">
+                <h3 class="m-0 lh-1">1334 <span>Egp</span></h3>
+                <p class="m-0 lh-1" style="font-size: 10px; font-weight:bold; ">Total Value</p>
+                <div class="Icontainer lh-1">
+                    <p class=" mx-4 ">23</p>
+                </div>
+            </div>
+
+            <div class="lh-1 d-flex flex-column p-3 rounded" style="gap:2px;width:130px;height: 100px;background:white;">
+                <h3 class="m-0 lh-1">1334 <span>Egp</span></h3>
+                <p class="m-0 lh-1" style="font-size: 10px; font-weight:bold; ">Total Value</p>
+                <div class="Icontainer lh-1">
+                    <p class=" mx-4 ">23</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="graph bg-white d-flex gap-3 align-items-center w-25 rounded p-2">
+            <div #graph class="d-flex active" id="garph" (click)="changegraph()">
+                <mat-icon>accessibility</mat-icon>
+                <p class="m-0 ">Graph</p>
+            </div>
+            <div #list class="d-flex " id="list" (click)="changelist()">
+                <mat-icon>accessibility</mat-icon>
+                <p class="m-0 ">List</p>
+            </div>
+        </div>
+        <div>
+            <div *ngIf="change==1">
+                <app-chart>
+                </app-chart>
+            </div>
+            <div *ngIf="change==0">
+                <app-list></app-list>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex align-items-center flex-column ">
+        <div style="display: block; width:400px; ">
+            <ngx-charts-polar-chart [results]="radarChartData " [animations]="true " [legend]="false "></ngx-charts-polar-chart>
+        </div>
+        <div class="d-flex align-items-center flex-column w-25 ">
+            <div class="d-flex gap-4 flex-column ">
+                <div class="lh-1 ">
+                    <div class="d-flex gap-3 line align-items-center " style="height: 10px; ">
+                        <div class="d-flex align-items-center ">
+                            <p>
+                                <mat-icon>accessibility</mat-icon>
+                            </p>
+                            <p>Station Name</p>
+                        </div>
+                        <p>22.22m</p>
+                    </div>
+                    <div>
+                        <progress id="fileProgress " value="50" max="100"></progress>
+                    </div>
+                </div>
+                <div class="lh-1 ">
+                    <div class="d-flex gap-3 line align-items-center " style="height: 10px; ">
+                        <div class="d-flex align-items-center ">
+                            <p>
+                                <mat-icon>accessibility</mat-icon>
+                            </p>
+                            <p>Station Name</p>
+                        </div>
+                        <p>22.22m</p>
+                    </div>
+                    <div>
+                        <progress id="fileProgress " value="50" max="100"></progress>
+                    </div>
+                </div>
+                <div class="lh-1 ">
+                    <div class="d-flex gap-3 line align-items-center " style="height: 10px; ">
+                        <div class="d-flex align-items-center ">
+                            <p>
+                                <mat-icon>accessibility</mat-icon>
+                            </p>
+                            <p>Station Name</p>
+                        </div>
+                        <p>22.22m</p>
+                    </div>
+                    <div>
+                        <progress id="fileProgress " value="50" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

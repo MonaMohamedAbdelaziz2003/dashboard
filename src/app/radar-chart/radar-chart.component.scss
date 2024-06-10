@@ -1,0 +1,56 @@
+progress {
+    background-color: rgba(255, 119, 0, 0.286);
+    width: 180px;
+    height: 6px;
+}
+
+::-webkit-progress-bar {
+    background-color: rgba(255, 119, 0, 0.286);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+::-webkit-progress-value {
+    background-color: rgb(255, 119, 0);
+    border-radius: 5px;
+}
+
+.active {
+    background: rgb(255, 119, 0);
+    border-radius: 9px;
+    padding: 3px;
+    width: 120px;
+    color: white;
+}
+
+.graph div p {
+    cursor: pointer;
+}
+
+.all {
+    background: #F9F5F3 0% 0% no-repeat padding-box;
+    padding: 40px;
+}
+
+.Icontainer::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 1px;
+    border-top: 7px solid rgb(255, 119, 0);
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+}
+
+* {
+    margin: 0px;
+}
+
+.Icontainer {
+    position: relative;
+    display: inline-block;
+}
